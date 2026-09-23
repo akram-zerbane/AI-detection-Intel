@@ -1,0 +1,8 @@
+@'
+.env
+__pycache__/
+*.py[cod]
+venv/
+agent-env/
+.pytest_cache/
+'@ | Out-File -Encoding utf8 .gitignore
