@@ -1,2 +1,1 @@
-# AI-detection-Intel
-Autonomous AI detection engineering microservice that ingests scoped adversary telemetry and synthesizes validated, schema-compliant Sigma rules.
+ai-detection-intel is the autonomous detection synthesis engine powering the closed-loop DaC framework. Exposed via an asynchronous FastAPI microservice, it ingests scoped telemetry from MITRE Caldera and Shuffle SOAR, performs upstream discriminative token mining against false-positive baselines to suppress brittle indicators, queries high-speed LLMs (via Groq/Llama), enforces Pydantic structural validation on generated Sigma rules, and commits synthesized artifacts directly to GitOps staging. It also handles the /v1/telemetry/refine endpoint to iteratively correct failed rules based on CI diagnostics.
